@@ -1,0 +1,32 @@
+{
+    "Boxy Tweed Jacket": {
+        "name": "J.Crew Lady Jacket (Tweed)",
+        "url": "https://factory.jcrew.com/c/womens/clothing/jackets/lady-jackets",
+        "note": "Classic, professional, and boxy fit."
+    },
+    "Pointy-Toe Shoe": {
+        "name": "Sam Edelman Hazel Pointed Toe Pump",
+        "url": "https://www.samedelman.com/product/womens-hazel-pointed-toe-pump-3016088",
+        "note": "The industry standard for comfortable all-day work heels."
+    },
+    "Dark Denim Jacket": {
+        "name": "Levi's Original Trucker Jacket (Dark Wash)",
+        "url": "https://www.levi.com/US/en_US/clothing/women/outerwear/trucker-jackets/c/levi_clothing_women_outerwear_trucker_jackets",
+        "note": "Timeless, tailored fit."
+    },
+    "Light-Color A-Line Skirt": {
+        "name": "Ann Taylor A-Line Skirt",
+        "url": "https://www.anntaylor.com/clothing/skirts/a-line-skirts/cat2060004",
+        "note": "Professional workwear specialist."
+    },
+    "Bright Shirt With V-Neck": {
+        "name": "Express Portofino Shirt",
+        "url": "https://www.express.com/womens-clothing/tops/portofino-shirts/cat1660006",
+        "note": "Versatile work staple in many colors."
+    },
+    "Higher-Waisted Straight-Leg Trouser": {
+        "name": "Abercrombie Sloane Tailored Pant",
+        "url": "https://www.abercrombie.com/shop/us/womens-bottoms-pants-sloane-tailored-pants",
+        "note": "Viral favorite for fit and comfort."
+    }
+}

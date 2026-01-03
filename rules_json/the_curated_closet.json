@@ -1,0 +1,300 @@
+{
+  "wardrobe_principles": {
+    "be_selective": {
+      "formula": "if (love_item == true && fits_well == true) then keep_item else discard_item",
+      "logic": "Only keep clothing you absolutely love and that fits well. Recognize difference between quick fix and quality additions."
+    },
+    "be_authentic": {
+      "formula": "personal_style = personal_preferences + life_experiences - trend_following",
+      "logic": "Develop unique style instead of conforming to conventional typologies. Personal expressions are important."
+    },
+    "aim_for_quality": {
+      "formula": "if (price < budget && quality_score > 8) then consider_purchase else continue_looking",
+      "logic": "Invest in high-quality pieces that offer durability and satisfaction instead of accumulating cheap, unwearable clothes."
+    },
+    "style_trumps_fashion": {
+      "formula": "wardrobe_score = (personal_expression * 0.7) + (trend_alignment * 0.3)",
+      "logic": "Prioritize your preferred aesthetic over fleeting trends. Style should reflect personality rather than societal expectations."
+    },
+    "put_in_the_work": {
+      "formula": "style_mastery = (experiments * time_invested) / fear_of_mistakes",
+      "logic": "Great style involves effort and practice. Use experiences and experiments to cultivate wardrobe intentionally."
+    }
+  },
+  
+  "wardrobe_construction": {
+    "three_part_structure": {
+      "formula": "total_wardrobe = key_pieces + statement_pieces + basics",
+      "components": {
+        "key_pieces": ["jackets", "pants", "skirts", "versatile_tops"],
+        "statement_pieces": ["bold_shoes", "unique_tops", "statement_accessories"],
+        "basics": ["t_shirts", "jeans", "plain_tops", "simple_shoes"]
+      },
+      "ratio": "key_pieces: 40%, basics: 40%, statement_pieces: 20%"
+    },
+    
+    "outfit_formulas": [
+      {
+        "formula_name": "Flared jeans formula",
+        "components": ["flared jeans", "camisole", "cardigan", "sandals"]
+      },
+      {
+        "formula_name": "A-line skirt formula",
+        "components": ["A-line skirt", "button-down shirt", "mules"]
+      },
+      {
+        "formula_name": "Jeans and T-shirt formula",
+        "components": ["jeans", "T-shirt", "cardigan"]
+      }
+    ],
+    
+    "color_system": {
+      "palette_creation": {
+        "formula": "optimal_palette = (worn_colors ∩ loved_colors) + seasonal_adaptations - unflattering_colors",
+        "extraction_process": {
+          "from_wardrobe": "analyze_most_worn: document 5 most-worn colors over 2 weeks",
+          "from_inspiration": "extract_dominant_colors: identify 3-5 recurring colors from mood board",
+          "from_lifestyle": "add_functional_neutrals: work-appropriate, versatile base colors"
+        },
+        "structure": {
+          "total_colors": "6-12",
+          "main_colors": "2-4 colors you love (60% of purchases)",
+          "accent_colors": "2-3 colors for variety (20% of purchases)",
+          "neutral_colors": "2-3 colors for mixing (20% of purchases)",
+          "mixing_rule": "accent_colors must work with at least 2 main_colors and all neutral_colors"
+        },
+        "seasonal_adaptation": {
+          "formula": "seasonal_palette = base_colors[70%] + seasonal_accents[25%] + trend_colors[5%]",
+          "transition_rule": "change 20-30% of palette per season while keeping 70-80% consistent"
+        }
+      }
+    }
+  },
+  
+  "visual_style_development": {
+    "mood_board_creation": {
+      "formula": "mood_board = inspiration_images[20-50] + color_samples[5-10] + texture_samples[3-7] + silhouette_references[10-20]",
+      "process": {
+        "step1": "collect_images: save everything that inspires you in one digital folder",
+        "step2": "cull_images: delete images that no longer resonate (reduction of 30-50%)",
+        "step3": "identify_patterns: group by colors, silhouettes, materials, and overall vibes",
+        "step4": "create_collage: arrange images based on importance and visual harmony"
+      },
+      "analysis_criteria": [
+        "overall_vibe: what feeling or theme attracts you?",
+        "individual_items: which specific clothing pieces appeal?",
+        "colors: which shades and color combinations recur?",
+        "silhouettes: which fits and cuts appear repeatedly?",
+        "materials: what textures and fabrics dominate?",
+        "styling_techniques: what outfit details and combinations appear?"
+      ]
+    },
+    
+    "style_profile_generation": {
+      "formula": "style_profile = (mood_board_visual × 0.4) + (written_description × 0.3) + (wardrobe_analysis × 0.3)",
+      "components": {
+        "visual_component": {
+          "mood_board": "20-30 images representing ideal aesthetic",
+          "color_palette": "6-12 colors with type designation",
+          "silhouette_references": "5-10 preferred shapes and proportions",
+          "material_samples": "3-5 dominant textures and fabrics"
+        },
+        "written_component": {
+          "style_name": "descriptive 2-3 word phrase",
+          "key_characteristics": "3-5 adjectives describing aesthetic",
+          "typical_outfit": "describe complete head-to-toe look",
+          "style_non_negotiables": "3-5 must-have elements",
+          "style_avoidances": "3-5 elements to avoid"
+        }
+      },
+      "evolution_tracking": {
+        "formula": "style_evolution_rate = (new_influences × 0.4) + (lifestyle_changes × 0.4) + (confidence_growth × 0.2)",
+        "update_frequency": "major_review_6_months + minor_updates_per_season",
+        "adaptation_rule": "change_30%_of_profile_per_year_while_keeping_70%_core_identity"
+      }
+    },
+    
+    "visual_harmony_rules": {
+      "proportion_guidelines": {
+        "formula": "balanced_outfit = (vertical_lines × 0.3) + (horizontal_balance × 0.3) + (color_distribution × 0.2) + (texture_variety × 0.2)",
+        "rules": [
+          "vertical_lines: create with long layers, vertical seams, or monochromatic looks",
+          "horizontal_balance: pair fitted with loose, or vice versa",
+          "color_distribution: 60% main_color + 30% secondary + 10% accent",
+          "texture_variety: mix 2-3 textures maximum per outfit"
+        ]
+      },
+      "pattern_mixing_formula": {
+        "formula": "pattern_success = (scale_variation × 0.4) + (color_unification × 0.4) + (spacing_contrast × 0.2)",
+        "rules": [
+          "scale: mix large_pattern + small_pattern (never two large)",
+          "color: patterns must share at least one color",
+          "type: mix different_pattern_types (stripes + florals, not stripes + stripes)",
+          "spacing: mix dense_pattern + open_pattern"
+        ]
+      },
+      "texture_combination_matrix": {
+        "formula": "texture_mix = smooth[40%] + textured[40%] + dimensional[20%]",
+        "categories": {
+          "smooth": ["silk", "cotton_voile", "chiffon", "satin"],
+          "textured": ["tweed", "corduroy", "boucle", "ribbed_knit"],
+          "dimensional": ["lace", "embroidered", "beaded", "quilted"]
+        },
+        "combination_rule": "maximum_3_textures_per_outfit_with_at_least_one_smooth_element"
+      }
+    }
+  },
+  
+  "garment_assessment_system": {
+    "dress_clothing_analysis": {
+      "fit_assessment_matrix": {
+        "formula": "fit_score = (mirror_appearance × 0.4) + (movement_comfort × 0.3) + (body_proportion × 0.3)",
+        "checkpoints": {
+          "mirror_check": ["shoulders: seams at shoulder bone edge", "bust/chest: no pulling or gaping", "waist: sits at natural waist", "hips: smooth drape without pulling", "length: appropriate for height and style"],
+          "movement_check": ["sit_down: no restriction or riding up", "walk: comfortable stride length", "reach_upwards: arm mobility unrestricted", "bend_over: back coverage maintained", "hug: arm movement comfortable"]
+        },
+        "fit_problem_solutions": {
+          "trousers": {
+            "too_long": "hem_to_correct_length",
+            "tight_waist": "size_up_or_higher_rise",
+            "crotch_issues": "adjust_rise_or_style"
+          },
+          "tops": {
+            "tight_bust": "size_up_or_different_cut",
+            "loose_midsection": "tailor_side_seams",
+            "sleeve_issues": "adjust_length_or_armhole"
+          },
+          "jackets": {
+            "shoulder_divots": "size_down",
+            "loose_waist": "tailor_waistline"
+          }
+        }
+      },
+      
+      "quality_assessment_formula": {
+        "formula": "garment_quality = (fabric_score × 0.35) + (construction_score × 0.35) + (finishing_score × 0.30)",
+        "fabric_analysis": {
+          "natural_fibers": ["cotton: long-staple for durability", "linen: smooth texture", "wool: check elasticity and pilling", "silk: examine sheen and weight"],
+          "synthetics": ["polyester: breathable blends only", "nylon: strength for activewear", "spandex: 2-5% for stretch"],
+          "blends_rule": "natural_fiber_content > 50% for breathability"
+        },
+        "construction_checklist": [
+          "seams: straight, flat, no puckering, 5/8 inch allowance",
+          "stitches: 10-12 per inch, consistent tension",
+          "darts: properly placed for shaping",
+          "lining: present in structured garments, smooth",
+          "interfacing: used in collars, cuffs, waistbands"
+        ],
+        "detail_analysis": [
+          "buttons: secure, evenly spaced, functional",
+          "buttonholes: neat, reinforced, appropriate size",
+          "zippers: lie flat, smooth operation, matching color",
+          "pockets: functional, properly placed, reinforced corners",
+          "labels: woven, secure, includes care instructions"
+        ]
+      }
+    },
+    
+    "body_type_adaptation_rules": {
+      "principle": "wear_what_you_love + adapt_proportions_for_confidence",
+      "silhouette_adjustment_formula": {
+        "formula": "flattering_silhouette = (preferred_aesthetic × 0.5) + (body_proportion × 0.3) + (comfort_level × 0.2)",
+        "adaptation_strategies": [
+          "vertical_lines: create with long cardigans, vertical stripes, monochromatic looks",
+          "waist_definition: use belts, fitted tops, or high-waisted bottoms",
+          "proportion_balance: pair fitted_with_loose or structured_with_flowy",
+          "focus_points: draw_attention_to_favorite_features_with_color_or_detail"
+        ]
+      },
+      "fit_prioritization_hierarchy": {
+        "level1": "shoulders_and_upper_body_fit_first",
+        "level2": "waist_and_hip_accommodation_second",
+        "level3": "length_and_proportion_adjustments_third",
+        "tailoring_rule": "if (fit_issues <= 2 && garment_quality == high) then tailor_else_replace"
+      }
+    }
+  },
+  
+  "shopping_decision_system": {
+    "purchase_decision_matrix": {
+      "formula": "purchase_score = (style_match × 0.25) + (function_score × 0.25) + (quality_score × 0.25) + (budget_fit × 0.15) + (gut_feeling × 0.10)",
+      "threshold": "if purchase_score >= 8 then buy else wait",
+      "components": {
+        "style_match": "Does piece reflect personal style? (1-10)",
+        "function_score": "What role in wardrobe? Mixability? (1-10)",
+        "quality_score": "Comfort, construction, durability (1-10)",
+        "budget_fit": "Fills gap vs duplicates? Best use of budget? (1-10)",
+        "gut_feeling": "Multiple outfits possible? Wear for many seasons? (1-10)"
+      }
+    },
+    
+    "wardrobe_gap_analysis": {
+      "formula": "shopping_priority = (category_need × activity_frequency) / current_coverage",
+      "steps": [
+        "1. List all activities over 2 weeks",
+        "2. Calculate outfit needs per category",
+        "3. Compare current wardrobe coverage",
+        "4. Prioritize lowest (coverage / need) ratio"
+      ]
+    },
+    
+    "capsule_wardrobe_formula": {
+      "formula": "capsule_size = 20 + (lifestyle_complexity × 5) + (seasonal_variation × 5)",
+      "range": "20-40 pieces excluding accessories",
+      "rebuild_frequency": "every 3 months or per season",
+      "composition": "tops[40%] + bottoms[30%] + layers[20%] + dresses[10%]"
+    }
+  },
+  
+  "wardrobe_maintenance_system": {
+    "seasonal_update_schedule": {
+      "formula": "updates_per_year = 2 + (style_evolution_rate × 2)",
+      "major_updates": "before fall and spring (thorough)",
+      "minor_updates": "before winter and summer extremes (quick)",
+      "steps": {
+        "major": [
+          "Move off-season pieces to storage",
+          "Create seasonal style profile",
+          "Detox closet",
+          "Review lifestyle needs",
+          "Identify missing pieces",
+          "Shop as needed"
+        ],
+        "minor": [
+          "Check essentials for temperature extremes",
+          "Buy missing seasonal items"
+        ]
+      }
+    },
+    
+    "detox_decision_tree": {
+      "formula": "if (last_worn > 365_days || style_match < 5 || confidence_boost < 5) then remove",
+      "exceptions": ["sentimental_value", "investment_pieces_repairable"]
+    },
+    
+    "laundry_optimization": {
+      "formula": "quantity_needed = (days_between_laundry × outfits_per_day) / wears_between_washes",
+      "example": "t_shirts: if wear daily, wash weekly, need 7+",
+      "bottleneck_avoidance": "stock more frequently washed items"
+    }
+  },
+  
+  "lifestyle_integration_formulas": {
+    "wardrobe_lifestyle_alignment": {
+      "formula": "ideal_wardrobe_distribution = activity_distribution × comfort_factor",
+      "steps": [
+        "1. Chart time spent per activity (work, casual, formal, fitness)",
+        "2. Multiply by comfort requirements per activity",
+        "3. Compare to current wardrobe distribution",
+        "4. Adjust purchases to match ideal distribution"
+      ]
+    },
+    
+    "work_wardrobe_adjustment": {
+      "formula": "work_wardrobe_size = work_days_per_week × outfit_variety_preference",
+      "corporate": "separate_wardrobe = true, capsule_size = 15-25",
+      "smart_casual": "double_duty_pieces = 60%, add_on_pieces = 40%",
+      "work_from_home": "polished_comfort = true, professional_options = 3-5"
+    }
+  }
+}

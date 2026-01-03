@@ -1,0 +1,15 @@
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+pydantic-settings==2.2.1
+sqlalchemy==2.0.27
+aiosqlite==0.19.0
+python-multipart==0.0.9
+httpx==0.26.0
+pytest==8.0.0
+ultralytics
+opencv-python-headless
+numpy
+torch
+torchvision
+Pillow
+appwrite==4.0.0

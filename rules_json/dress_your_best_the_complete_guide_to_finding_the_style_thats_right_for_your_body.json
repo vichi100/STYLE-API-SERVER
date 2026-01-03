@@ -1,0 +1,670 @@
+{
+  "women": {
+    "essentials": [
+      "black pantsuit",
+      "softer neutral suit with pants or skirt (gray, brown, khaki, or navy)",
+      "3 pairs of neutral trousers",
+      "3 winter-weight skirts (1 should be a tweed)",
+      "3 summer-weight skirts (1 should be a tweed)",
+      "3 cotton button-front shirts",
+      "3 blouses",
+      "2 sparkly tops",
+      "leather jacket",
+      "denim jacket",
+      "trench coat",
+      "3 pairs of jeans (all hemmed to different lengths for flats, heels, and sandals)",
+      "black dress",
+      "solid-color dress",
+      "print or embellished dress",
+      "6 sweaters (3 neutral, 3 color, varying necklines: crew, V-neck, cardigan)",
+      "3 blazers (1 summer weight, 1 three-season weight, 1 winter weight)",
+      "¾-length wool coat",
+      "watch with 2 bands (leather and link)",
+      "black bag",
+      "brown bag",
+      "color or print bag",
+      "black heels",
+      "brown heels",
+      "color or print or embellished heels",
+      "black boots",
+      "brown boots",
+      "black flats"
+    ],
+    "body_types": {
+      "bigger_on_top": {
+        "general_rules": [
+          "Do not accentuate the narrowness of your lower half with narrow trousers or skirts.",
+          "Create a streamlined look by adding volume (not bulk) to your lower half.",
+          "Must-have: The best bra you can afford and an A-line skirt that falls below the knee."
+        ],
+        "petite": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["multibutton or one-button high-stance jacket", "softly draped A-line skirt", "closed-toe pointy shoe"],
+              "notes": ["Jacket falls over hip, skirt below knee, add textured hosiery in lighter shade than suit."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["three-button jacket with contrast piping", "wide-leg jeans (lighter wash)", "pointy boot"],
+              "notes": ["Jacket has three-quarter sleeves, jeans left slightly long to balance top."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["cleavage-supporting dress with thick straps", "evening heel"],
+              "notes": ["Dress has seaming at chest/waist, horizontal ruching, vertical pleating, soft skirt folds."]
+            }
+          ],
+          "color_rules": ["Use lighter wash jeans to balance chest (reflects light, focuses on legs).", "Small doses of contrast piping pull focus away from problem areas."],
+          "assessment_logic": ["Get professionally fitted for bras.", "Re-fit bras if weight changes by 10 pounds."]
+        },
+        "average_height": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["dark turtleneck", "straight skirt", "pointy-toe kitten heel"],
+              "notes": ["Use darker top, lighter bottom to pull focus from chest. Skirt at knee."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["fitted short boxy jacket", "schweater (sweater with shirt collar)", "non-skinny pants (lighter color)"],
+              "notes": ["Jacket has narrow lapel, high armholes, snug shoulders. Avoid khakis matching skin tone."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["empire-waist dress with deep V", "supportive bra", "evening heel"],
+              "notes": ["Dress narrow in hip, bias cut, soft A-line with inverted pleats."]
+            }
+          ],
+          "color_rules": ["Darker colors camouflage, lighter colors emphasize.", "Mix patterns like florals and animal prints sparingly.", "Brunettes with brown eyes can wear blues."],
+          "assessment_logic": ["Ensure jacket shoulder fits squarely, sleeve covers wrist, half-inch shirt sleeve shows."]
+        },
+        "tall": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["three-button hourglass suit", "straight skirt below knee", "regal jewelry"],
+              "notes": ["Jacket with small shoulder pads. Skirt utilizes natural leg length."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["dark denim jacket", "scoop-neck knit top", "light-color A-line skirt"],
+              "notes": ["Choose large-scale prints to match height. Roll sleeves to elbow for proportion."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["tank dress with A-line skirt", "graduated print", "ankle-strap sandal"],
+              "notes": ["Dress supports bra, sash accents waist, ankle strap balances skirt volume."]
+            }
+          ],
+          "color_rules": ["For evening black and white, use clear jewelry (rhinestones, diamonds)."],
+          "assessment_logic": ["With super-long legs, darker opaque tights maintain long silhouette."]
+        }
+      },
+      "bigger_on_bottom": {
+        "general_rules": [
+          "Do not wear tops that are too long and cover your tush.",
+          "Look for tops with structure, a defined waistline, that sit above the hip.",
+          "Must-have: A mid-width nonpleated trouser that sits at the top of the hip."
+        ],
+        "petite": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["pinstripe jacket with peplum", "fitted straight skirt", "spectator high heel"],
+              "notes": ["Jacket has small shoulder pads, mid-stance, wider lapel. Skirt to top of knee."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["structured leather jacket", "dark uniform-wash straight jeans", "pointy shoe"],
+              "notes": ["Jeans mid-rise, no whiskering. Jacket covers top of hip."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["strapless dress with A-line skirt", "pointy-toe kitten heel"],
+              "notes": ["Dress has horizontal seaming at bust/waist, vertical seaming on skirt."]
+            }
+          ],
+          "color_rules": ["Pinstripes create vertical elongation for petites."],
+          "assessment_logic": ["Hem jeans with original stitching if too long.", "For evening, use sheer hose matching skin tone."]
+        },
+        "average_height": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["short leather jacket", "A-line skirt (dark or subtle print)", "pointy shoe"],
+              "notes": ["Jacket nips waist, sits at top of hip. Use impactful colors on top."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["three-quarter topper coat", "bright shirt with V-neck", "higher-waisted straight-leg trouser"],
+              "notes": ["Coat camouflages hips. Trousers create shorter torso, longer leg line."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["V-neck halter dress", "soft A-line skirt", "metallic shoe"],
+              "notes": ["Dress has distinct waistband, blousing effect. Halter accentuates shoulders."]
+            }
+          ],
+          "color_rules": ["Use softer neutrals (chocolate brown, navy, charcoal) with brights instead of black for day.", "Red and black can look chic with a third neutral (white, cream, camel)."],
+          "assessment_logic": ["Try petite-size pants if legs appear shorter."]
+        },
+        "tall": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["corduroy blazer with elasticized waist", "mid-rise mid-width trouser", "vertical-striped shirt"],
+              "notes": ["Jacket has strong shoulder. Trouser falls straight from widest part of hip."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["bright-color turtleneck", "stiff denim A-line skirt", "pointy-toe flat"],
+              "notes": ["Sweater hits at top of hip, three-quarter sleeve. Skirt camouflages hip."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["structured satin dress with angled seaming", "silver kitten-heel sling-back"],
+              "notes": ["Dress has neckline detailing, horizontal waist seam, vertical skirt seaming."]
+            }
+          ],
+          "color_rules": ["Brown and gray go together (both neutrals)."],
+          "assessment_logic": ["Pants crotch must sit at private bits without pulling or creasing."]
+        }
+      },
+      "a_little_extra_in_the_middle": {
+        "general_rules": [
+          "Do not accentuate thinner legs with skinny pants and skirts.",
+          "Look for tops with structure and bottoms with a little volume to proportion midsection.",
+          "Must-have: A one- or two-button fitted jacket with a stance above the natural waistline."
+        ],
+        "petite": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["fitted jacket in color", "empire-waist A-line dress", "pointy-toe skinny heel"],
+              "notes": ["Jacket nips at waist, falls over hip. Dress deflects eye upward."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["structured short blazer", "mid-width mid-rise denim trouser", "pointy-toe boot"],
+              "notes": ["Blazer has two-button mid-stance, sits no lower than top of hips."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["spaghetti-strap dress with alternating fabrics", "contrasting color shoe"],
+              "notes": ["Dress has shiny/matte fabrics, inverted tiers, shorter front hem."]
+            }
+          ],
+          "color_rules": ["Brown and orange is an attractive color combo (avoid black and orange)."],
+          "assessment_logic": ["Suits can be jacket-and-dress combos (not just jacket/pant or jacket/skirt)."]
+        },
+        "average_height": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["stretch silk shantung shirt", "wider straight-leg trouser with crease", "pointy shoe"],
+              "notes": ["Shirt shoulder seam at edge of shoulder, small side vents, length to top of hip."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["three-quarter tweed trench", "darker sweater", "dark wide-leg jean"],
+              "notes": ["Coat open for vertical column. Sweater has loose weave, no thick ribbing at waist."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["stretch blouse with vertical ruching", "patterned skirt", "ankle-strap pointy shoe"],
+              "notes": ["Blouse has V-neck, prominent collar. Skirt bisects at widest part of midsection."]
+            }
+          ],
+          "color_rules": ["Match items to colors in a multicolored tweed, add neutrals.", "Amethyst complements hair and skin, works with gray."],
+          "assessment_logic": ["If shirt pulls slightly at buttons, add hidden snaps or Velcro."]
+        },
+        "tall": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["two-button jacket with angled seaming", "bright top", "slight flare pant with pointy boot"],
+              "notes": ["Jacket hits below hip bone, narrows at waist. Add bold accessories."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["button-front boxy shirt", "higher-waisted wider straight pant", "bright trench coat"],
+              "notes": ["Shirt falls away from body. Pants higher waist covers tummy."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["one-button tuxedo with high stance", "long boot-cut trouser", "large cocktail ring"],
+              "notes": ["Tux has contrasting lapel, creates lean line, camouflages midsection."]
+            }
+          ],
+          "color_rules": [],
+          "assessment_logic": ["Bold prints can balance a bigger frame."]
+        }
+      },
+      "curvy": {
+        "general_rules": [
+          "Do not attempt to wear super-low-rise items (accents hips and love handles).",
+          "Look for items that follow natural curves and accent the narrowness of your waistline.",
+          "Must-have: A wrap or faux wrap dress in cotton or nylon jersey."
+        ],
+        "petite": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["one-button jacket with longer lapel", "mid-width straight trouser with crease", "pointy shoe"],
+              "notes": ["Jacket falls to bottom of hip, worn open. Layer with thin knit with vertical ruching."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["shorter boxy three-button jacket", "wider-leg jean (like trousers)", "pointy shoe or elongated loafer"],
+              "notes": ["Jacket molds to hip curve. Jeans fit from widest part of hip straight down."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["structured halter dress (e.g., Dutchess satin)", "kitten-heel pump or sling-back"],
+              "notes": ["Dress has empire and waist seams, A-line skirt, 1950s style."]
+            }
+          ],
+          "color_rules": ["Pinstripes create vertical elongation for petites.", "Brunettes with pale skin: invest in emerald (bluish undertones)."],
+          "assessment_logic": ["Layer under jacket with camisole and thin knit for polished look.", "Accessories should be proportionate to size (smaller lady, smaller bag)."]
+        },
+        "average_height": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["fitted suit jacket", "straight skirt", "structured bag or clutch"],
+              "notes": ["Jacket follows body line, narrows at waist. Skirt covers knee (not longer)."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["three-quarter topper coat", "short top (to waistline)", "mid-rise narrow straight jean"],
+              "notes": ["Coat open, top with V-neck. Jeans darker wash for sophistication."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["straight spaghetti-strap dress", "ankle-strap heel"],
+              "notes": ["Dress provides bra-like support, straps fit securely. Pleated hem balances hip."]
+            }
+          ],
+          "color_rules": ["Black with primary colors looks dated; use other neutrals to accent black.", "Pale metallics work better on olive or dark skin."],
+          "assessment_logic": ["Find favorite jean cut; buy multiple pairs hemmed for different heel heights."]
+        },
+        "tall": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["short boxy blazer", "paneled trumpet-flared skirt", "belt over jacket"],
+              "notes": ["Blazer has multiple buttons. Skirt past knee. Belt above natural waist."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["wrap dress with thick sash", "knee-high boots"],
+              "notes": ["Sash ties between rib cage and natural waist. Dress has deep V neckline."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["full-length black dress with angled tiers", "chandelier earrings", "high heel"],
+              "notes": ["Dress has deep V, cap sleeves, diagonal tiers of satin and velvet."]
+            }
+          ],
+          "color_rules": ["Black for evening is timeless; pair with brightly colored shoes or bag.", "Match print size to stature (tall can wear larger prints)."],
+          "assessment_logic": ["Look for faux wrap dresses (easier to wear).", "Tweed looks great with patterned tights (argyle, herringbone)."]
+        }
+      },
+      "not_curvy": {
+        "general_rules": [
+          "Do not attempt to wear clothing that doesn’t fit your chest or tush.",
+          "Go for clingier clothes such as knitwear and boy-cut pants to help create curves.",
+          "Must-have: Something supersexy (halter top, backless dress, etc.)."
+        ],
+        "petite": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["white or light-color suit", "cap-sleeve blouse with vertical pleating", "straight skirt"],
+              "notes": ["Suit adds authority. Blouse has peplum to exaggerate hip curve."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["fitted blazer", "knitwear", "jeans with whiskering"],
+              "notes": ["Blazer is structured. Horizontal stripes broaden frame. Jeans accent hips/thighs."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["silk charmeuse halter dress", "softly draped A-line skirt"],
+              "notes": ["Dress has lace inset at waist, tricolor construction, longer skirt length."]
+            }
+          ],
+          "color_rules": ["White and lighter colors create more physical presence (reflect light).", "Pseudo-neutrals (burgundy, army green, light blue) pair with many colors."],
+          "assessment_logic": ["European cuts are smaller; try them for petite frames."]
+        },
+        "average_height": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["fitted blazer with bright piping", "trumpet skirt", "pointy shoe"],
+              "notes": ["Blazer has curved seaming, nipped waist. Skirt adds volume without bulk."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["stretch denim jacket with midwaist seaming", "boy-cut lower-rise trousers", "square-toe shoe"],
+              "notes": ["Jacket defines waist, flares at hip. Trousers emphasize hips/tush."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["stretch satin pencil dress with seaming", "rounded-toe metallic sling-back"],
+              "notes": ["Dress has empire seaming, diamond-shaped front panel, vertical side seams."]
+            }
+          ],
+          "color_rules": ["Brown and pink are chic for day.", "Chocolate brown warms olive or pale skin."],
+          "assessment_logic": ["Look for pockets with flaps or larger buttons to add oomph to small chest/tush."]
+        },
+        "tall": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["men's-cut trouser with cuff", "bold billowy blouse", "knit vest"],
+              "notes": ["Trouser in glen plaid, blouse with attached scarf. Vest defines waist."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["boxy fur or faux fur jacket", "long-sleeve bright tee", "fitted shorter sweater", "fitted turtleneck", "jeans"],
+              "notes": ["Layer fitted pieces. Jacket broadens torso, big collar."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["fitted tank with thick straps", "voluminous full skirt", "ankle-strap sandal"],
+              "notes": ["Tank has deep scoop neck. Skirt well past knee (mid-calf)."]
+            }
+          ],
+          "color_rules": ["Mix patterns if they aren't all competing (one primary, others supporting)."],
+          "assessment_logic": ["For tall thin calves, look for stretch leather boots."]
+        }
+      },
+      "extra_curvy": {
+        "general_rules": [
+          "Do not go for too much ruffle and frill or loose drapy fabrics (no shape).",
+          "Look for clothing with clean lines, flattering seaming, and stiffer fabrics with structure.",
+          "Must-have: A structured leather or stiff material jacket that sits at the top of the hip."
+        ],
+        "petite": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["single-button leather blazer", "curved-seam skirt (below knee)", "pointy shoe"],
+              "notes": ["Blazer creates V shapes top and bottom. Skirt longer to balance bust/waist."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["boxy shorter jacket", "wider-leg straight jean", "pointy boot"],
+              "notes": ["Jacket sits on top of hip. Jeans balance body, no boot cut."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["camisole with pleating under bust", "handkerchief-hem skirt", "shawl"],
+              "notes": ["Camisole suggests waistline. Skirt shows narrow lower leg."]
+            }
+          ],
+          "color_rules": ["Softer neutrals (instead of primary colors or black) look fresher and more sophisticated.", "Khaki with bright color is great for day."],
+          "assessment_logic": ["Buy jackets that close; have shoulders taken in if needed.", "Bag strap length should hit mid-torso to accentuate waist."]
+        },
+        "average_height": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["well-fitting knit sweater", "straight skirt (does not narrow at knee)", "larger clutch"],
+              "notes": ["Sweater has asymmetric rib. Skirt plays up curves without exaggerating."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["patterned shirt", "boot-cut jeans", "pointy-toed cowboy boot"],
+              "notes": ["Shirt pattern proportionate to frame. Jeans fit well in thigh, uniform wash."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["deep-V halter dress", "convertible bra", "silver accessories"],
+              "notes": ["Dress has ruching for support, front slit. Full-length for formal events."]
+            }
+          ],
+          "color_rules": ["Red with silver (not gold) for evening.", "Tweed in plus sizes: look for thin-weight or thin lining to avoid bulk."],
+          "assessment_logic": ["Accessories should match stature (larger clutch, cuff bracelet)."]
+        },
+        "tall": {
+          "outfit_formulas": [
+            {
+              "formula_name": "Work",
+              "components": ["boxy tweed jacket", "flat-front trouser (darker top, lighter bottom)", "pointy-toe shoe"],
+              "notes": ["Jacket hits at top of hip, camouflages tummy. Trouser mid-width."]
+            },
+            {
+              "formula_name": "Weekend",
+              "components": ["loose wrap shirt", "wide-leg trouser", "brown boot and pink bag"],
+              "notes": ["Shirt shows cleavage. Trouser in midweight fabric, darker neutral."]
+            },
+            {
+              "formula_name": "Evening",
+              "components": ["wide-neck sweater", "handkerchief-hem skirt with diagonal stripe", "pointy-toe ankle-strap shoe"],
+              "notes": ["Sweater keeps attention up. Skirt flirty, balances wider torso."]
+            }
+          ],
+          "color_rules": ["Choose prints proportionate to body size (large prints for larger frames).", "Use multicolor print as guide for accessory colors."],
+          "assessment_logic": ["Never buy a jacket you cannot close; fit largest part, tailor shoulders.", "Jackets: high armholes and narrow arms create narrower silhouette."]
+        }
+      }
+    }
+  },
+  "men": {
+    "essentials": [
+      "two- or three-button suit in neutral color (black, charcoal gray, navy) in heavier-weight wool",
+      "two- or three-button suit in neutral color (brown, medium gray) in tropical-weight wool",
+      "tweed sport coat",
+      "at least six dress shirts (sized to neck and sleeve)",
+      "six sports shirts (polos, etc.)",
+      "six ties",
+      "two pocket squares",
+      "three sweaters (preferably cashmere)",
+      "overcoat",
+      "brown loafers",
+      "black loafers",
+      "brown lace-ups",
+      "black lace-ups",
+      "two pairs of jeans (medium wash for weekend, dark for evening)",
+      "one pair of cargo, painter, or carpenter pants",
+      "brown belt",
+      "black belt",
+      "leather briefcase",
+      "quality umbrella",
+      "metal-banded watch",
+      "leather-strapped watch",
+      "nonathletic sneaker"
+    ],
+    "body_types": {
+      "short": {
+        "general_rules": ["Create a straight, streamlined silhouette; eliminate excess fabric.", "Pay close attention to fit."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["vertically striped shirt", "flat-front pinstripe trousers", "topper coat (not full-length)", "monochromatic belt/pant/shoe"],
+            "notes": ["Tuck in shirt. No cuffs on pants. Slight break at hem."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["shorter boxy jacket with vertical stripe", "polo or V-neck tee", "dark shoes with jeans"],
+            "notes": ["Jacket keeps torso wide. Shirt hem just below waistband. No cuffs on jeans."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["short suit (jacket ends where tush meets leg)", "dark shirt", "cuffless pants"],
+            "notes": ["Jacket tapered at waist. Two-button with moderately low stance. Slight break at hem."]
+          }
+        ],
+        "color_rules": ["Monochrome belt/pant/shoe lengthens leg line.", "Avoid white or light shoes with jeans (break leg line)."],
+        "assessment_logic": ["Pants crotch should not hang too low; tailor rise if needed.", "Shirt length: tuck in or tailor to just below waistband."]
+      },
+      "average": {
+        "general_rules": ["Focus on perfect fit to go from good to great."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["two-button pinstripe suit", "dress shirt with tie", "brown shoes"],
+            "notes": ["Jacket shoulder does not extend past natural shoulder. Sleeve covers wrist, shows ½ inch shirt sleeve."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["classic sport coat", "cargos/carpenter pants/flat-front khakis", "casual shirt or tee"],
+            "notes": ["Sport coat roomy in shoulder, sleeves longer than suit jacket. Pants hemmed slouchy."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["suit with strong shoulder", "patterned shirt or pocket square", "belt matching shoes"],
+            "notes": ["Jacket taken in at waist. Add interest if tie not required."]
+          }
+        ],
+        "color_rules": ["Brown shoes with navy suit is chic.", "Mix patterns (e.g., geometric tie with pinstripe suit) using colors in tie as cue."],
+        "assessment_logic": ["Dress shirts sized to neck/arm; sports shirts sized S/M/L/XL (no tie).", "Match socks to trousers, not shoes (except with jeans)."]
+      },
+      "tall": {
+        "general_rules": ["Avoid looking gangly; add bulk to appear less skinny."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["three-button suit with bold chalk stripe", "dress shirt and tie", "brown shoes and belt"],
+            "notes": ["Jacket covers butt. Trousers with single pleat and cuff."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["crewneck tee with horizontal stripes", "mid-width pants", "contrasting sneaker or shoe"],
+            "notes": ["Stand-up collar or crewneck deemphasizes long neck. Horizontal stripes broaden chest."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["printed jacket", "turtleneck", "velvet or similar-weight pants", "long-toe shoe"],
+            "notes": ["Printed jacket adds bulk. Turtleneck for long neck. Shoe proportionate to height."]
+          }
+        ],
+        "color_rules": ["Black and brown can be mixed in clothing (not accessories)."],
+        "assessment_logic": ["If taller than 6'4\", may need tall suit; otherwise regular may work.", "Shirts: fit arm length and tailor torso, or roll sleeves to mid-forearm."]
+      },
+      "athletic": {
+        "general_rules": ["Use fabrics that cling to the body; find a good tailor."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["softly constructed jacket (no padding)", "fitted striped shirt", "tailored trousers"],
+            "notes": ["Jacket lies flat on shoulder. Shirt taken in at waist. Trousers fit tush, taken in at waist."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["clingy ribbed sweater", "casual pants", "belt and watch in similar tones"],
+            "notes": ["Sweater fine rib. Turtleneck if neck not thick. Accessories in different tones of neutrals."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["tuxedo jacket", "striped shirt", "wide-leg jean (lighter wash)", "metallic shoes"],
+            "notes": ["Jacket broad lapel. Shirt tucked. Jeans provide comfort, balance top."]
+          }
+        ],
+        "color_rules": [],
+        "assessment_logic": ["For drop >7 inches, consider suit separates or major alterations.", "Messenger bag emphasizes broad shoulder/narrow waist; if tummy, use briefcase."]
+      },
+      "small_framed": {
+        "general_rules": ["Look for European cuts (narrower).", "Avoid oversized clothing."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["European-cut suit", "spread-collar shirt", "narrow tie", "narrow-lapel jacket"],
+            "notes": ["Suit fits closely. Lapels and tie narrow. Half-Windsor knot."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["lighter-color top", "darker bottom", "thick knit sweater", "slim-fit casual pants"],
+            "notes": ["Raglan sleeve or baseball jersey adds shoulder emphasis. Tees fitted."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["boxy jacket with epaulettes", "horizontal-stripe shirt", "sneakers (non-athletic)"],
+            "notes": ["Jacket shorter waist, wider torso. Horizontal stripes add width. Sneakers only for casual evening."]
+          }
+        ],
+        "color_rules": ["Cream can wash out light skin; add color near face.", "Light top/dark bottom makes upper body appear larger."],
+        "assessment_logic": ["Never button bottom suit button; top button depends on lapel construction."]
+      },
+      "barrel_chested": {
+        "general_rules": ["Play up large chest, arms, shoulders; camouflage thicker midsection."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["light-color checked jacket", "fine-wale cords", "big watch"],
+            "notes": ["Jacket fits shoulder, camouflages midsection. Cords in bold color."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["V-neck sweater", "long-sleeve contrast tee", "boxy sweater (no ribbed bottom)", "lug-soled shoe"],
+            "notes": ["Sweater elongates neck. Tee sleeves show at wrists. Sweater ribbed on arms/shoulder only."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["car coat", "wide-leg jean (medium rise)", "bold print tie", "substantial belt buckle"],
+            "notes": ["Coat soft-shoulder, long straight line. Jeans balance top. Tie vertical line."]
+          }
+        ],
+        "color_rules": ["Mix stripes and plaid: find common color, vary pattern weights.", "Forest green and purple is a good color combo."],
+        "assessment_logic": ["Avoid 'catalog sweaters' (chunky, patterned).", "Tailor sweaters if too long in body/sleeves."]
+      },
+      "tummy": {
+        "general_rules": ["Create balance with stronger shoulders and wider legs."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["boxy jacket in stiff fabric", "wide straight-leg trousers", "vertical-rib sweater"],
+            "notes": ["Jacket strong shoulder. Trousers no pleats, wide through leg. Sweater not clingy."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["car coat/topper/pea coat", "V-neck sweater", "cargo pant", "chunky shoe"],
+            "notes": ["Coat creates long straight line. Cargo pockets add lower bulk. Scarf adds vertical emphasis."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["black jacket (fits shoulder)", "bold print shirt (untucked)", "wide-leg jean"],
+            "notes": ["Jacket cuts in at waist. Shirt length not below crotch. Jeans balance top."]
+          }
+        ],
+        "color_rules": [],
+        "assessment_logic": ["Pull trousers up high on tummy to avoid saggy crotch.", "Jacket should fit largest part; tailor shoulders."]
+      },
+      "hips": {
+        "general_rules": ["Balance lower body by adding emphasis to upper body."],
+        "outfit_formulas": [
+          {
+            "formula_name": "Work",
+            "components": ["sport coat (boxy, tailored through middle)", "bright shirt under darker jacket", "pleated pants (single pleat)"],
+            "notes": ["Jacket long enough to cover widest part. Windowpane pattern adds interest."]
+          },
+          {
+            "formula_name": "Weekend",
+            "components": ["polo shirt (tucked, bloused)", "button-front shirt over", "dark wide-leg trousers"],
+            "notes": ["Shirt open creates vertical line. Trousers flat front if possible."]
+          },
+          {
+            "formula_name": "Evening",
+            "components": ["topcoat with strong shoulder", "bright tie", "velvet collar", "shiny black leather shoes"],
+            "notes": ["Coat adds upper bulk. Tie, pocket square, shirt color draw attention up."]
+          }
+        ],
+        "color_rules": [],
+        "assessment_logic": ["Fit pants in waist, hips, thighs, butt; alter leg width if too wide.", "Overcoat length: not floor length; shorten if needed."]
+      }
+    }
+  },
+  "universal_tips": {
+    "tailoring": ["Everyone can benefit from alterations. Clothes tailored to fit look more expensive.", "Women: hem lines, pull in waist, shorten sleeves.", "Men: tailor suits and shirts for perfect fit."],
+    "quality_over_quantity": ["Buy one quality piece (e.g., cashmere sweater) instead of multiple cheap ones."],
+    "fit_rules": ["A garment must fit the largest part of you; then tailor the rest.", "Jackets: always buy ones that can be closed; have shoulders taken in if needed.", "Pants: crotch should sit properly without pulling or sagging.", "Shirts: collar should allow two fingers when buttoned."],
+    "color_mixing": ["Shoes and bags don't have to match; they have to 'go'.", "Mix metallics for evening.", "Brown and black can be mixed in clothing (not accessories).", "Use multicolor prints as a guide for accessory colors."],
+    "prints_patterns": ["Match print size to body stature.", "Mix patterns by letting one be primary and others supporting.", "Animal prints: classic on shoes, bags, pencil skirts; awful on denim, linen, fuzzy slippers."],
+    "accessories": ["Choose accessories proportionate to body size.", "Balance statement pieces with minimalist ones.", "Belts: add two inches to waist size for correct fit.", "Jewelry: bold pieces for tall/bigger frames, delicate for petite."],
+    "seasonal_adaptation": ["Adjust fabrics and weights for season; keep silhouette principles.", "For warmer months: lighter fabrics, shorter sleeves, open necklines.", "For colder months: layer fitted pieces, use heavier fabrics, add tights/boots."],
+    "hosiery": ["Opaque tights for day, sheer for evening. Never seamed toe with open-toe shoe.", "Match hosiery color to skin tone for most natural look.", "Texture (herringbone, argyle) can add interest."]
+  }
+}

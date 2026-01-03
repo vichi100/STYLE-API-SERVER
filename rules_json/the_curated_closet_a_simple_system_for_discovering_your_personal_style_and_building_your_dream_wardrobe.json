@@ -1,0 +1,98 @@
+{
+  "outfit_formulas": [
+    {
+      "formula_name": "Flared jeans + simple camisole + cardigan + flat sandals",
+      "components": ["flared jeans", "simple camisole", "cardigan", "flat sandals"]
+    },
+    {
+      "formula_name": "Pencil skirt + knit sweater + blazer + heels",
+      "components": ["pencil skirt", "knit sweater", "blazer", "heels"]
+    },
+    {
+      "formula_name": "Knee-length skirt + knit sweater + coat + heels",
+      "components": ["knee-length skirt", "knit sweater", "coat", "heels"]
+    },
+    {
+      "formula_name": "Straight-leg pants + oversize shirt + jacket + flats",
+      "components": ["straight-leg pants", "oversize shirt", "jacket", "flats"]
+    },
+    {
+      "formula_name": "Skinny jeans + tunic + flat sandals",
+      "components": ["skinny jeans", "tunic", "flat sandals"]
+    },
+    {
+      "formula_name": "Mini dress + oversize button-down (tie at waist) + sneakers",
+      "components": ["mini dress", "oversize button-down", "sneakers"]
+    }
+  ],
+  "color_rules": {
+    "palette_structure": {
+      "recommended_total_colors": 6,
+      "max_total_colors": 12,
+      "main_colors_count": 3,
+      "accent_colors_count": 4,
+      "neutral_colors_count": 2
+    },
+    "selection_rules": [
+      "Main colors should reflect the essence of your style and be ones you feel super comfortable wearing a lot.",
+      "Accent colors should work well with each neutral and at least two of your main colors.",
+      "Neutral colors should support and balance out the other colors.",
+      "Choose neutrals after selecting main and accent colors to ensure they complement the overall palette.",
+      "For maximum mixability, each new piece should work with at least several colors in your palette."
+    ],
+    "mixing_rules": [
+      "Pair statement pieces in accent colors with neutral basics to avoid overpowering a look.",
+      "Use neutral pieces to tone down bold colors or fill in gaps in an outfit.",
+      "Accent colors should be used for statement pieces and accessories that pair with main colors and neutrals."
+    ],
+    "texture_and_print_rules": [
+      "Pay attention to materials, fabrics, and textures (e.g., cotton, leather, knitting, chiffon) as essential components of style.",
+      "If you love a pattern but not for clothing, consider incorporating it into home decor or artwork."
+    ]
+  },
+  "assessment_logic": {
+    "garment_fit_checklist": [
+      "Does it hang on your body as the designer intended?",
+      "Does it feel comfortable and allow you to move freely?",
+      "Does it stay put without having to be readjusted?",
+      "Is it free of bulging, puckering, billowing, or wrinkling?",
+      "Does it follow the natural curves of your body?",
+      "Can you see yourself wearing this for many seasons?"
+    ],
+    "garment_quality_checklist": [
+      "Is the fabric soft, strong, and dense (for cotton)?",
+      "Is the fabric free of pills?",
+      "Is the fabric tightly woven and not see-through?",
+      "Are seams straight, neat, and secure?",
+      "Do patterns line up at the seams?",
+      "Are seams flat without puckering?",
+      "Are load-bearing seams double-stitched, French seamed, or bound?",
+      "Does the garment have darts on the front and under the bust for shaping?",
+      "Are shoulder seams reinforced?",
+      "Is there a center back seam (for jackets and coats)?",
+      "Does the garment have a shoulder yoke (for shirts and blouses)?",
+      "Does the garment include interfacings and facings?",
+      "Is the lining made of a sturdy, antistatic material with the same care code as the outer fabric?",
+      "Are buttonholes reinforced and of the keyhole type (for jackets and cardigans)?",
+      "Are buttons spaced evenly and secured with multiple threads?",
+      "Does the zipper move smoothly and lie flat without puckering?",
+      "Are pockets reinforced and of adequate length?",
+      "Are labels woven and placed comfortably?",
+      "Am I prepared to properly take care of this item (according to care label)?"
+    ],
+    "purchase_decision_checklist": [
+      "Does this piece reflect my personal style?",
+      "Do I like how it looks on my body?",
+      "Can I think of a clear role for this item within my wardrobe?",
+      "Does it work with my lifestyle?",
+      "Is it mixable with at least three other outfits?",
+      "Does it fit well and is it comfortable?",
+      "Is the garment well-constructed and made from a high-quality material?",
+      "Will this piece fill a gap in my wardrobe?",
+      "Is buying this piece the best use of my budget right now?",
+      "Do I want to buy this for reasons other than need and style (e.g., sale, boredom, stress)?",
+      "Can I think of at least three concrete outfits I could create with this piece?",
+      "Can I see myself wearing this for many seasons?"
+    ]
+  }
+}

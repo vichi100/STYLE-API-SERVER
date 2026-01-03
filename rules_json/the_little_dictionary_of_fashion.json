@@ -1,0 +1,108 @@
+{
+  "book_title": "The Little Dictionary of Fashion",
+  "author": "Christian Dior",
+  "styling_logic": {
+    "outfit_formulas": [
+      {
+        "formula_name": "Daywear Professional",
+        "components": ["well-tailored blazer", "versatile blouse", "tailored trousers or skirt", "elegant comfortable shoes"]
+      },
+      {
+        "formula_name": "Little Black Dress Day",
+        "components": ["little black dress", "blazer", "minimal jewelry", "comfortable day shoes"]
+      },
+      {
+        "formula_name": "Little Black Dress Evening",
+        "components": ["little black dress", "statement necklace", "clutch", "heels"]
+      },
+      {
+        "formula_name": "Tailored Suit",
+        "components": ["well-fitted blazer", "tailored trousers or skirt", "appropriate accessories"]
+      },
+      {
+        "formula_name": "Classic Evening",
+        "components": ["evening gown or cocktail dress", "statement jewelry", "elegant clutch", "sophisticated footwear", "shawl"]
+      }
+    ],
+    "color_rules": [
+      {
+        "rule_name": "Skin Undertone Compatibility",
+        "description": "Choose colors based on skin undertone.",
+        "warm_undertones": ["rich browns", "olive greens", "warm reds"],
+        "cool_undertones": ["sapphire", "emerald", "amethyst", "icy pastels"],
+        "neutral_undertones": "Can wear both warm and cool palettes."
+      },
+      {
+        "rule_name": "Seasonal Color Guidelines",
+        "spring": ["pastels", "vibrant greens"],
+        "summer": ["airy whites", "bold blues", "floral prints"],
+        "autumn": ["burnt orange", "mustard yellow", "forest green"],
+        "winter": ["charcoal", "midnight blue", "berry tones"]
+      }
+    ],
+    "fabric_texture_rules": [
+      {
+        "rule_name": "High-Quality Materials",
+        "preferred_fabrics": ["silk", "cotton", "wool", "cashmere"],
+        "guidance": "Invest in high-quality natural fibers for longevity and elegance."
+      },
+      {
+        "rule_name": "Texture for Occasion",
+        "luxury_opulence": ["smooth silks", "satins"],
+        "warmth_structure": ["tweeds", "wools"]
+      }
+    ],
+    "accessorizing_rules": [
+      {
+        "rule_name": "Hat Selection",
+        "guidance": "Hat should complement face shape and outfit. Wide-brimmed for drama with summer dress, cloche hat with tailored suit."
+      },
+      {
+        "rule_name": "Glove Proportion",
+        "guidance": "Glove length should be in proportion to sleeve length: longer gloves with shorter sleeves, shorter gloves with longer sleeves."
+      },
+      {
+        "rule_name": "Belt Utility",
+        "guidance": "Use belts to define waist and add structure. Have various widths/textures. Narrow bright belts for accent, wide cinched belts for drama."
+      },
+      {
+        "rule_name": "Jewelry Occasion Appropriateness",
+        "daytime": "understated pieces",
+        "evening": "dramatic or statement pieces"
+      },
+      {
+        "rule_name": "Accessory Balance",
+        "guidance": "Choose 1-2 standout items, keep rest simple. Avoid over-accessorizing."
+      }
+    ],
+    "assessment_logic": {
+      "fit_checklist": [
+        "Does the garment fit perfectly without pulling or gaping?",
+        "Is it tailored to enhance your natural silhouette?",
+        "Does it allow for comfortable movement?",
+        "Is the length and proportion flattering for your body?"
+      ],
+      "quality_checklist": [
+        "Is the fabric high-quality (e.g., natural fibers like silk, wool, cotton, cashmere)?",
+        "Is the construction sturdy with neat seams and finishes?",
+        "Does the garment maintain its shape and structure?",
+        "Will it age well and last over time?"
+      ],
+      "personal_alignment_checklist": [
+        "Does the garment reflect your personality and style?",
+        "Does it make you feel confident and at ease?",
+        "Is it versatile enough for multiple occasions?",
+        "Does it enhance your natural beauty without overshadowing you?"
+      ]
+    },
+    "core_principles": [
+      "Prioritize quality over quantity.",
+      "Choose timeless pieces over fleeting trends.",
+      "Ensure perfect fit through tailoring.",
+      "Never sacrifice comfort for style.",
+      "Use accessories to personalize and elevate outfits.",
+      "Dress appropriately for the occasion while maintaining individuality.",
+      "Maintain grooming as a foundation of elegance."
+    ]
+  }
+}

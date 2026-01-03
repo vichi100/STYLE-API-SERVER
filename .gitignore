@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Project Specific
+.tmp_idm_vton/
+*.pt
+*.png
+*.jpg
+# Keep specific images if needed, but given the names they look like test outputs
+
+# Environments
+.env
+.venv
+env/
+venv/
+venv_moondream/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+
+# Appwrite
+.appwrite/
