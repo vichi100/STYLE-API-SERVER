@@ -8,7 +8,11 @@ app = FastAPI(
 )
 
 from app.api.v1 import images
+from app.api.v1 import garments
+from app.api.v1 import auth
 app.include_router(images.router, prefix="/api/v1/images", tags=["images"])
+app.include_router(garments.router, prefix="/api/v1/garments", tags=["garments"])
+app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 
 # Set all CORS enabled origins
 if settings.BACKEND_CORS_ORIGINS:

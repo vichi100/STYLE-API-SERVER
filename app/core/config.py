@@ -13,6 +13,13 @@ class Settings(BaseSettings):
     APPWRITE_ENDPOINT: str = "https://cloud.appwrite.io/v1"
     APPWRITE_DATABASE_ID: str = ""
 
+    # OTP Settings
+    OTP_API_KEY: str = ""
+    OTP_TEMPLATE_NAME: str = "FlickSickOTP1"
+
+    # Moondream
+    MOONDREAM_API_KEY: str = ""
+
 
     @validator("BACKEND_CORS_ORIGINS", pre=True)
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[List[str], str]:
