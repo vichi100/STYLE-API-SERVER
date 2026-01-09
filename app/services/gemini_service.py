@@ -15,7 +15,6 @@ class ClothingItem(typing.TypedDict):
     category: str
     color: str
     tags: list[str]
-    box_2d: list[int] # [ymin, xmin, ymax, xmax] 0-1000
 
 class OutfitAnalysis(typing.TypedDict):
     summary: str
@@ -56,14 +55,13 @@ class GeminiFashionService:
 
             # 3. The Prompt
             prompt = """
-            Analyze the outfit in this image. 
+            Analyze the image to identify any clothing items.
+            The image may contain a full outfit on a person, OR a standalone garment (flat lay, hanger, or product shot).
             
-            1. Identify all visible clothing items (Top, Bottom, Footwear, etc.).
-            2. For EACH item, provide a 'box_2d' containing the bounding box coordinates.
-            3. Coordinates must be integers from 0 to 1000 (representing 0% to 100% of the image dimensions).
-            4. Format for box_2d: [ymin, xmin, ymax, xmax].
+            1. Identify all visible clothing items (Top, Bottom, Footwear, Dress, Outerwear, etc.).
             
             STRICT RULES:
+            - If it is a floral pattern or texture on a cloth, identify the cloth itself (e.g. 'Floral Dress', 'Patterned Shirt').
             - Only label items that are clearly visible.
             - If the item is occluded, estimate the visible region.
             - Do not hallucinate items outside the frame.

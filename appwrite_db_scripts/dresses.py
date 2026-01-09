@@ -14,6 +14,7 @@ def setup_closet(db_service: Databases, db_id: str):
     create_attr(db_service.create_string_attribute, db_id, coll_id, "specific_category", 128, required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "image_id", 36, required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "image_url", 2048, required=False) # URL
+    create_attr(db_service.create_string_attribute, db_id, coll_id, "caption", 1000, required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "tag", 128, required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "colors", 64, required=False, array=True)
     create_attr(db_service.create_datetime_attribute, db_id, coll_id, "add_date", required=False)

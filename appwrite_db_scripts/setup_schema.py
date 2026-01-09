@@ -16,6 +16,7 @@ from appwrite_db_scripts.messages import setup_messages
 from appwrite_db_scripts.top_matches import setup_top_matches
 from appwrite_db_scripts.mis_match import setup_mis_match
 from appwrite_db_scripts.accessories import setup_accessories
+from appwrite_db_scripts.wardrobe import setup_wardrobe
 
 def setup_schema():
 
@@ -60,6 +61,9 @@ def setup_schema():
 
         print("\n--- Setup Accessories Collection ---")
         setup_accessories(db_service, db_id)
+
+        print("\n--- Setup Wardrobe Collection ---")
+        setup_wardrobe(db_service, db_id)
 
         print("\nSchema setup complete!")
         print(f"Database ID: {db_id}")

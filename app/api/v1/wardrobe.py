@@ -67,10 +67,11 @@ async def remove_wardrobe_items(request: WardrobeRemoveRequest):
     errors = []
 
     async def remove_single_item(item_id):
-        print(f"Processing item removal: {item_id}")
+        print(f"--> [Thread] Starting removal for: {item_id}")
         # Wrap blocking service call in threadpool
         func = functools.partial(wardrobe_service.delete_wardrobe_item, request.user_id, item_id)
         success = await run_in_threadpool(func)
+        print(f"--> [Thread] Finished removal for: {item_id}, Success: {success}")
         return item_id, success
 
     # Create tasks

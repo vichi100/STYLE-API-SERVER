@@ -69,10 +69,12 @@ class WardrobeService:
             # 1. Fetch Item to get details (Image ID)
             print(f"WS: Fetching item {item_id} for deletion...")
             try:
+                print(f"WS: Attempting to get document with ID: {item_id}")
                 item = self.db.get_document(self.db_id, self.coll_id, item_id)
-                print(f"WS: Item found. Owner: {item.get('user_id')}")
+                print(f"WS: Item found via Doc ID. Owner: {item.get('user_id')}")
             except AppwriteException as e:
-                print(f"WS: Item {item_id} NOT found by ID. Checking if it is an Image ID...")
+                print(f"WS: Item {item_id} NOT found by Doc ID. Error: {e}")
+                print(f"WS: Checking if {item_id} is an Image ID...")
                 # Fallback: Check if item_id is actually an image_id
                 from appwrite.query import Query
                 try:
