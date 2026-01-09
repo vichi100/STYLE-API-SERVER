@@ -95,19 +95,75 @@ async def upload_garment(
             print(f"--> Gemini Analysis took {duration:.2f} seconds")
             print(f"--> Analysis Result: {analysis_result}")
             
+            # 8. Save Analysis to Wardrobe Item
+            if analysis_result:
+                updates = {}
+                
+                # Map 'summary' -> 'caption'
+                if "summary" in analysis_result:
+                    updates["caption"] = analysis_result["summary"]
+                
+                # Check for items
+                if "items" in analysis_result and len(analysis_result["items"]) > 0:
+                    first_item = analysis_result["items"][0]
+                    
+                    # Map 'item_name' -> 'specific_category'
+                    if "item_name" in first_item:
+                         updates["specific_category"] = first_item["item_name"]
+                    
+                    # Map 'category' -> 'general_category' (Update existing)
+                    if "category" in first_item:
+                         updates["general_category"] = first_item["category"]
+                         
+                    # Map 'tags' -> 'tags' (Convert list to JSON string or use Appwrite array if configured. 
+                    # Script said array=False for 'tags' in Wardrobe? Let me check schema script.)
+                    # Checking wardrobe.py: create_string_attribute(..., "tags", 128, required=False) -> It is NOT an array in the script!
+                    # "tags" is a string attribute (128 chars). So we must join them.
+                    if "tags" in first_item and isinstance(first_item["tags"], list):
+                         updates["tags"] = ",".join(first_item["tags"])
+                    
+                    # Map 'color' -> 'colors' (Wardrobe has 'colors' as array=True)
+                    # Gemini returns single 'color' string usually, or list? Schema says 'color': str.
+                    # Wardrobe schema: "colors", 64, array=True.
+                    if "color" in first_item:
+                        updates["colors"] = [first_item["color"]]
+                
+                if updates:
+                    print(f"--> Updating Wardrobe Item {wardrobe_id} with AI logic...")
+                    wardrobe_service.update_wardrobe_item(wardrobe_id, updates)
+
         except Exception as e:
             print(f"--> Auto-Analysis Failed: {e}")
             # Do not fail the upload request if analysis fails
             pass 
             
-        return {
-            "status": "success", 
-            "message": "Garment uploaded and saved to wardrobe",
-            "data": {
-                "wardrobe_id": wardrobe_id,
-                "image_id": image_id
-            }
+        # Prepare final response data 
+        # User requested to match the Wardrobe table structure (flattened)
+        response_data = {
+             "wardrobe_id": wardrobe_id,
+             "image_id": image_id,
+             "image_url": image_url,
+             "user_id": user_id,
+             # Default Values
+             "caption": "",
+             "specific_category": "",
+             "general_category": "Uncategorized",
+             "tags": "",
+             "colors": []
         }
+
+        # Merge updates if available
+        if analysis_result and updates:
+             response_data.update(updates)
+        
+        final_response = {
+            "status": "success", 
+            "message": "Garment uploaded, analyzed, and saved to wardrobe",
+            "data": response_data
+        }
+        
+        print(f"--> Sending Response: {final_response}")
+        return final_response
 
     except Exception as e:
         if isinstance(e, HTTPException):

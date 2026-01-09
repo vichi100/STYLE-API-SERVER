@@ -127,4 +127,22 @@ class WardrobeService:
             logger.error(f"Error deleting wardrobe item {item_id}: {e}")
             return False
 
+    def update_wardrobe_item(self, item_id: str, updates: dict):
+        """
+        Updates a wardrobe item with new attributes.
+        """
+        try:
+            print(f"WS: Updating item {item_id} with {updates.keys()}")
+            result = self.db.update_document(
+                database_id=self.db_id,
+                collection_id=self.coll_id,
+                document_id=item_id,
+                data=updates
+            )
+            return result
+        except AppwriteException as e:
+            logger.error(f"Error updating wardrobe item {item_id}: {e}")
+            print(f"WS: Error updating item {item_id}: {e}")
+            return None
+
 wardrobe_service = WardrobeService()

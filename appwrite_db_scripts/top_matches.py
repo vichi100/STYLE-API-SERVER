@@ -17,5 +17,6 @@ def setup_top_matches(db_service: Databases, db_id: str):
     create_attr(db_service.create_string_attribute, db_id, coll_id, "match_elements", 5000, required=False)
     create_attr(db_service.create_float_attribute, db_id, coll_id, "score", required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "caption", 1000, required=False)
+    create_attr(db_service.create_string_attribute, db_id, coll_id, "tags", 128, required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "colors", 64, required=False, array=True)
     create_attr(db_service.create_datetime_attribute, db_id, coll_id, "create_date", required=False)
