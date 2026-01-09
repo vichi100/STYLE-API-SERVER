@@ -4,7 +4,7 @@ from app.services.otp_service import otp_service
 
 router = APIRouter()
 
-@router.post("/login", status_code=status.HTTP_200_OK)
+@router.post("/otp", status_code=status.HTTP_200_OK)
 async def login(request: LoginRequest):
     """
     Initiate login by sending an OTP to the provided mobile number.
@@ -28,12 +28,15 @@ async def login(request: LoginRequest):
     # For this task, we are just sending it.
     
     
-    return {"status": "success", "message": "OTP sent successfully"}
+    # Encode OTP for client-side decoding
+    encoded_otp = otp_service.encode_otp(otp)
+    
+    return {"status": "success", "message": "OTP sent successfully", "otp": encoded_otp}
 
 from app.schemas.auth import CheckUserRequest
 from app.services.user_service import user_service
 
-@router.post("/check-user", status_code=status.HTTP_200_OK)
+@router.post("/login", status_code=status.HTTP_200_OK)
 async def check_user(request: CheckUserRequest):
     """
     Check if user exists by mobile.
@@ -46,16 +49,40 @@ async def check_user(request: CheckUserRequest):
     user = user_service.get_user_by_mobile(mobile)
     
     if user:
-        return {"status": "existing_user", "data": user}
+        # Extract requested fields
+        dress_list = user.get("dress_id_list") or []
+        accessory_list = user.get("accessory_id_list") or []
+        
+        response_data = {
+            "Name": user.get("name"),
+            "Id": user.get("$id"),
+            "Mobile": user.get("mobile"),
+            "Email": user.get("email"),
+            "Height": user.get("height"),
+            "Weight": user.get("weight"),
+            "full_lenght_Image_id": user.get("full_length_image_id"), # DB has full_length_image_id
+            "close_up_image_id": user.get("close_up_image_id"),
+            "dress_id_list_count": len(dress_list),
+            "accessory_id_list_count": len(accessory_list)
+        }
+        return {"status": "existing_user", "data": response_data}
     
     # 2. If not, create new user
     new_user = user_service.create_user(mobile)
     
-    # Return minimal info as requested (mobile and id) or full doc
+    # Return formatted info for new user too (fields will be empty/placeholder)
     return {
         "status": "new_user", 
         "data": {
-            "$id": new_user["$id"],
-            "mobile": new_user["mobile"]
+            "Name": new_user.get("name"),
+            "Id": new_user.get("$id"),
+            "Mobile": new_user.get("mobile"),
+            "Email": new_user.get("email"),
+            "Height": new_user.get("height"),
+            "Weight": new_user.get("weight"),
+            "full_lenght_Image_id": None,
+            "close_up_image_id": None,
+            "dress_id_list_count": 0,
+            "accessory_id_list_count": 0
         }
     }

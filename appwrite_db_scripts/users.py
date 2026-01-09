@@ -19,8 +19,11 @@ def setup_users(db_service: Databases, db_id: str):
     create_attr(db_service.create_string_attribute, db_id, coll_id, "skin_color", 64, required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "image_id", 36, required=False)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "full_length_image_id", 36, required=False)
+    create_attr(db_service.create_string_attribute, db_id, coll_id, "full_length_image_url", 2048, required=False) # URL
     create_attr(db_service.create_string_attribute, db_id, coll_id, "close_up_image_id", 36, required=False)
+    create_attr(db_service.create_string_attribute, db_id, coll_id, "close_up_image_url", 2048, required=False) # URL
     create_attr(db_service.create_string_attribute, db_id, coll_id, "dress_id_list", 36, required=False, array=True)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "accessory_id_list", 36, required=False, array=True)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "top_matches_id_list", 36, required=False, array=True)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "mis_match_id_list", 36, required=False, array=True)
+    create_attr(db_service.create_string_attribute, db_id, coll_id, "wardrobe_id_list", 36, required=False, array=True)

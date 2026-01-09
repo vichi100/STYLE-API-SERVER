@@ -11,6 +11,11 @@ class OTPService:
         return str(random.randint(1000, 9999))
 
     @staticmethod
+    def encode_otp(otp: str) -> str:
+        import base64
+        return base64.b64encode(otp.encode("utf-8")).decode("utf-8")
+
+    @staticmethod
     async def send_otp(mobile: str, otp: str) -> bool:
         # User provided API structure: 
         # https://2factor.in/API/V1/{OTP_API}/SMS/{mobile}/{OTP}/{TEMPLATE_NAME}

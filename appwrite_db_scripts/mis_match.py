@@ -12,6 +12,7 @@ def setup_mis_match(db_service: Databases, db_id: str):
     create_attr(db_service.create_string_attribute, db_id, coll_id, "user_id", 36, required=True)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "category", 128, required=True)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "image_id", 36, required=False)
+    create_attr(db_service.create_string_attribute, db_id, coll_id, "image_url", 2048, required=False)
     # match_elements stores JSON string of elements
     create_attr(db_service.create_string_attribute, db_id, coll_id, "match_elements", 5000, required=False)
     create_attr(db_service.create_float_attribute, db_id, coll_id, "score", required=False)

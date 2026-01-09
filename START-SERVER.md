@@ -38,3 +38,7 @@ The server will be available at `http://localhost:8000`.
 
 ## Important Note regarding Background Removal
 The first time you use the background removal feature (`/api/v1/images/remove-background`), the server will automatically download the U-2-Net model (~176MB). This may take a few moments depending on your internet connection. Subsequent requests will be much faster.
+
+
+
+python3 server.py

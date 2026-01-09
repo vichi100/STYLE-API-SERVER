@@ -14,3 +14,4 @@ torchvision
 Pillow
 appwrite==4.0.0
 moondream
+google-genai

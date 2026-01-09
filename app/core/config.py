@@ -12,6 +12,8 @@ class Settings(BaseSettings):
     APPWRITE_API_KEY: str = ""
     APPWRITE_ENDPOINT: str = "https://cloud.appwrite.io/v1"
     APPWRITE_DATABASE_ID: str = ""
+    APPWRITE_BUCKET_ID: str = ""
+    APPWRITE_WARDROBE_BUCKET_ID: str = ""
 
     # OTP Settings
     OTP_API_KEY: str = ""
@@ -19,6 +21,9 @@ class Settings(BaseSettings):
 
     # Moondream
     MOONDREAM_API_KEY: str = ""
+    
+    # Gemini
+    GOOGLE_API_KEY: str = ""
 
 
     @validator("BACKEND_CORS_ORIGINS", pre=True)
