@@ -9,6 +9,7 @@ class WardrobeFetchRequest(BaseModel):
     user_id: str
     mobile: str
 
+
 @router.post("/items")
 async def get_wardrobe_items(request: WardrobeFetchRequest):
     """

@@ -123,10 +123,33 @@ async def upload_garment(
                          updates["tags"] = ",".join(first_item["tags"])
                     
                     # Map 'color' -> 'colors' (Wardrobe has 'colors' as array=True)
-                    # Gemini returns single 'color' string usually, or list? Schema says 'color': str.
-                    # Wardrobe schema: "colors", 64, array=True.
                     if "color" in first_item:
                         updates["colors"] = [first_item["color"]]
+
+                    # Map 'custom_category' -> 'custom_category'
+                    if "custom_category" in first_item:
+                        c_cat = first_item["custom_category"]
+                        updates["custom_category"] = c_cat
+                        
+                        # FORCE general_category = "top" for specific custom categories
+                        if c_cat in ["tops", "shirts", "Layer", "active", "ethnic"]:
+                             updates["general_category"] = "top"
+                        
+                        # FORCE general_category = "bottom" for bottom categories
+                        elif c_cat in ["jeans", "trousers", "skirts", "shorts", "ethnic_bottoms", "active_lounge"]:
+                             updates["general_category"] = "bottom"
+                        
+                        # FORCE general_category = "dress" for dresses/rompers
+                        elif c_cat in ["oomph", "gown", "Romps"]:
+                             updates["general_category"] = "dress"
+                        
+                        # FORCE general_category = "footwear" for footwear
+                        elif c_cat in ["heels", "shoes", "sandals"]:
+                             updates["general_category"] = "footwear"
+                        
+                        # FORCE general_category = "bag" for bags
+                        elif c_cat == "bags":
+                             updates["general_category"] = "bag"
                 
                 if updates:
                     print(f"--> Updating Wardrobe Item {wardrobe_id} with AI logic...")
@@ -148,6 +171,7 @@ async def upload_garment(
              "caption": "",
              "specific_category": "",
              "general_category": "Uncategorized",
+             "custom_category": "",
              "tags": "",
              "colors": []
         }

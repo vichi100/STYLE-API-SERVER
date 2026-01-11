@@ -17,4 +17,5 @@ def setup_wardrobe(db_service: Databases, db_id: str):
     create_attr(db_service.create_string_attribute, db_id, coll_id, "colors", 64, required=False, array=True)
     create_attr(db_service.create_string_attribute, db_id, coll_id, "image_url", 2048, required=False) # Long for URL
     create_attr(db_service.create_string_attribute, db_id, coll_id, "caption", 1000, required=False) # AI or User Caption
+    create_attr(db_service.create_string_attribute, db_id, coll_id, "custom_category", 128, required=False) # e.g. 'Tops', 'Shirts', 'Layer', etc.
     create_attr(db_service.create_datetime_attribute, db_id, coll_id, "add_date", required=False)

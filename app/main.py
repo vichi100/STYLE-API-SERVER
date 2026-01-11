@@ -17,6 +17,9 @@ app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 app.include_router(wardrobe.router, prefix="/api/v1/wardrobe", tags=["wardrobe"])
 app.include_router(proxy.router, prefix="/proxy", tags=["proxy"])
 
+from app.api.v1 import mismatch
+app.include_router(mismatch.router, prefix="/api/v1/mismatch", tags=["mismatch"])
+
 # Set all CORS enabled origins
 if settings.BACKEND_CORS_ORIGINS:
     app.add_middleware(
