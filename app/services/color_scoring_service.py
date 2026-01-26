@@ -9,13 +9,16 @@ import json
 from google import genai
 from google.genai import types
 from app.core.config import settings
+from app.core.config import settings
 from app.services.vector_scoring_service import VectorScoringService, get_vector_service
+import time
+import random
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-print("\n--- LOADING COLOR SCORING SERVICE V2 (HYDRATION ENABLED) ---\n")
+print("\n--- LOADING COLOR SCORING SERVICE V3 (APPROXIMATE MATCHING) ---\n")
 
 # Define Output Schema
 class PaletteMatch(typing.TypedDict):
@@ -26,7 +29,6 @@ class PaletteMatch(typing.TypedDict):
 class ScoreComponent(typing.TypedDict):
     criterion: str
     score: int
-
 
 
 class ColorScoreResult(typing.TypedDict):
@@ -119,6 +121,34 @@ class ColorScoringService:
             return text # Fallback
         except Exception as e:
             return text
+
+    def _generate_with_retry(self, contents, config):
+        """Helper to retry Gemini calls on 429 errors with custom delays: [1, 2, 3, 2]."""
+        delays = [1, 2, 3, 2]
+        retries = len(delays)
+        attempt = 0
+        
+        while attempt <= retries:
+            try:
+                response = self.client.models.generate_content(
+                    model="gemini-2.0-flash",
+                    contents=contents,
+                    config=config
+                )
+                return response
+            except Exception as e:
+                error_str = str(e)
+                if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                    if attempt >= retries:
+                        logger.error(f"Gemini 429 Exhausted after {retries} retries.")
+                        raise e
+                    
+                    wait_time = delays[attempt] + random.uniform(0, 0.5) # Small jitter
+                    logger.warning(f"Gemini Rate Limit (429). Retrying in {wait_time:.2f}s... (Attempt {attempt+1}/{retries})")
+                    time.sleep(wait_time)
+                    attempt += 1
+                else:
+                    raise e
 
     def analyze_outfit_with_palette(self, outfit_images: dict[str, bytes], outfit_metadata: dict[str, dict], target_mood: str = None) -> ColorScoreResult:
         """
@@ -213,22 +243,25 @@ class ColorScoringService:
         1. Analyze the Visual Harmony (Fit, Silhouette, Style).
         {mood_prompt}
         
-        3. COLOR PALETTE TAGGING:
+        3. COLOR PALETTE TAGGING (APPROXIMATE MATCHING REQUIRED):
            - Scan the provided 'Dictionary of Colour Combinations'.
-           - Does this outfit's color scheme match a specific named palette?
-           - If yes, identify the 'name' (e.g., 'Hermosa Pink').
-           - Explain WHY it matches in the 'reason' field (e.g., "Top matches primary color Hermosa Pink, Bottom matches suggested combination Cobalt Blue").
-           - If no exact match, find the closest one or return "None".
+           - find the BEST FITTING palette for this outfit, even if not 100% exact.
+           - **CRITICAL**: Use VISUAL APPROXIMATION. 
+             - If the user wears "Blue", and the palette has "Cobalt Blue" -> It IS a match.
+             - If the user wears "Orange", and the palette has "Tawny" -> It IS a match.
+           - Identify the 'name' of the best match (e.g., 'Hermosa Pink').
+           - Explain WHY it matches in the 'reason' field (e.g., "Top fits the primary color X (approx), Bottom matches Y").
+           - Only return "None" if there is a COMPLETE CLASH with all retrieved options.
         
         4. SCORING:
            - Color Coordination (Do the items work together?)
             - Silhouette Balance (Does the combination create a flattering shape?)
             - Creativity/Individuality
             - Adherence to Principles 
-
-         - Check if the outfit's colors correspond to any specific named combination or palette in the "COLOR DICTIONARY MATCHES" section above.
-        - If a match is found (e.g. "Hermosa Pink"), explicitly mention it in the critique.
-        - You MUST add a `ScoreComponent` to the breakdown with criterion "Color Dictionary Match" and a score (10 for perfect match, 5-9 for close).
+           
+           - Check if the outfit's colors correspond to any specific named combination or palette in the "COLOR DICTIONARY MATCHES" section above.
+           - If a match is found (e.g. "Hermosa Pink"), explicitly mention it in the critique.
+           - You MUST add a `ScoreComponent` to the breakdown with criterion "Color Dictionary Match" and a score (10 for perfect match, 5-9 for close).
         
         5. Calculate a Total Score out of 100.
         6. Provide a constructive critique.
@@ -241,8 +274,8 @@ class ColorScoringService:
         try:
             contents = [prompt] + images[:3]
             
-            response = self.client.models.generate_content(
-                model="gemini-2.0-flash",
+            # Use retry wrapper
+            response = self._generate_with_retry(
                 contents=contents,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
