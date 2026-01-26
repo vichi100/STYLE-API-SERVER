@@ -110,7 +110,18 @@ def delete_image(bucket_id: str, file_id: str):
         return True
     except Exception as e:
         print(f"❌ Delete Failed: {e}")
-        return False
+
+def get_file_bytes(bucket_id: str, file_id: str) -> bytes:
+    """
+    Fetches the file content bytes from Appwrite.
+    """
+    try:
+        # storage.get_file_download returns the raw binary content
+        result = storage.get_file_download(bucket_id=bucket_id, file_id=file_id)
+        return result
+    except Exception as e:
+        print(f"❌ Fetch Failed: {e}")
+        return None
 
 
 

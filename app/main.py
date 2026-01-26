@@ -20,6 +20,18 @@ app.include_router(proxy.router, prefix="/proxy", tags=["proxy"])
 from app.api.v1 import mismatch
 app.include_router(mismatch.router, prefix="/api/v1/mismatch", tags=["mismatch"])
 
+from app.api.v1 import style
+app.include_router(style.router, prefix="/api/v1/style", tags=["style"])
+
+from app.api.v1 import rule_scoring
+app.include_router(rule_scoring.router, prefix="/api/v1/rule-style", tags=["rule-style"])
+
+from app.api.v1 import vector_scoring
+app.include_router(vector_scoring.router, prefix="/api/v1/semantic", tags=["semantic-style"])
+
+from app.api.v1 import color_scoring
+app.include_router(color_scoring.router, prefix="/api/v1/color", tags=["color-theory"])
+
 # Set all CORS enabled origins
 if settings.BACKEND_CORS_ORIGINS:
     app.add_middleware(
@@ -29,6 +41,12 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+@app.on_event("startup")
+async def startup_event():
+    # Initialize Vector Service (Load Model & Ingest Rules)
+    # This runs once on server start
+    print("Initializing Vector Scoring Service...")
+    vector_scoring.vector_service.initialize()
 
 @app.get("/health")
 def health_check():
