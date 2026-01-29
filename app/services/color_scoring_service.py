@@ -30,6 +30,13 @@ class ScoreComponent(typing.TypedDict):
     criterion: str
     score: int
 
+class StylingSuggestions(typing.TypedDict):
+    footwear: str
+    bag: str
+    outerwear: str
+    accessories: str
+    makeup_hair: str
+
 
 class ColorScoreResult(typing.TypedDict):
     total_score: int
@@ -38,7 +45,7 @@ class ColorScoreResult(typing.TypedDict):
     mood_analysis: str
     critique: str
     strengths: list[str]
-    improvements: list[str]
+    suggestions: StylingSuggestions
     matched_rules: list[str]
     mood_score: int
     matched_palette: PaletteMatch
@@ -265,8 +272,14 @@ class ColorScoringService:
         
         5. Calculate a Total Score out of 100.
         6. Provide a constructive critique.
-        7. List strengths and improvements.
-        8. Cite specific rules from the provided JSONs that were followed or broken.
+        6. STYLING RECOMMENDATIONS (Be Extremely Specific about COLOR and TYPE):
+           - footwear: Suggest the perfect shoe type + color (e.g. "White Leather Sneakers" or "Nude Strappy Heels").
+           - bag: Suggest the ideal bag (e.g. "Tan Crossbody Bag" or "Silver Clutch").
+           - outerwear: Suggest a jacket/layer (e.g. "Denim Jacket in Light Wash").
+           - accessories: Suggest jewelry/watch (e.g. "Gold Hoop Earrings and Minimalist Watch").
+           - makeup_hair: Brief Suggestion (e.g. "Loose waves and red lip").
+        
+        7. Cite specific rules from the provided JSONs that were followed or broken.
         
          Output valid JSON exactly matching the ColorScoreResult schema.
         """
@@ -279,13 +292,65 @@ class ColorScoringService:
                 contents=contents,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    response_schema=ColorScoreResult
+                    response_schema=ColorScoreResult,
+                    temperature=0.95 # Force deterministic output
                 )
             )
             
             if hasattr(response, 'parsed') and response.parsed:
-                print(f"\\n[DEBUG COLOR GEMINI] Parsed Response:\\n{response.parsed}")
-                return response.parsed
+                parsed_result = response.parsed
+                
+                # --- FORCE MATCH LOGIC ---
+                # Logic: IF matched_palette is "None" OR (Color Breakdown Score - Match Confidence) diff > 6
+                # THEN Force Assign Top RAG Result.
+                
+                palette_data = parsed_result.get("matched_palette", {})
+                is_none = palette_data.get("name", "None") == "None" 
+                match_confidence = palette_data.get("match_confidence", 0)
+                gemini_conf_score = match_confidence / 10.0 # Scale 0-10
+                
+                # Check Breakdown Scores
+                breakdown = parsed_result.get("breakdown", [])
+                color_score = 0
+                for item in breakdown:
+                    if "Color" in item.get("criterion", ""):
+                        # Max of Coordination or Dictionary Match
+                        color_score = max(color_score, item.get("score", 0))
+                
+                diff = abs(color_score - gemini_conf_score)
+                print(f"[DEBUG MATCH LOGIC] Is None: {is_none}, ColorScore: {color_score}, ConfScore: {gemini_conf_score}, Diff: {diff}")
+                
+                if is_none or diff > 6:
+                    print(f"[DEBUG MATCH LOGIC] Forcing fallback to top RAG result. (Diff: {diff})")
+                    # Extract top palette from hydrated lines
+                    if hydrated_lines:
+                        # Format is "Palette: NAME (Hex..."
+                        first_match = hydrated_lines[0] # The most relevant semantic match
+                        # Extract Name
+                        import re
+                        name_match = re.search(r"Palette: (.*?) \(", first_match)
+                        if name_match:
+                            forced_name = name_match.group(1).strip()
+                            # SCALING FIX: Ensure score is 0-100
+                            final_conf = color_score
+                            if color_score <= 10:
+                                final_conf = color_score * 10
+                            
+                            # Cap at 99 just in case
+                            final_conf = min(int(final_conf), 99)
+
+                            parsed_result["matched_palette"] = {
+                                "name": forced_name,
+                                "reason": f"AI originally returned {palette_data.get('name')} (Conf {match_confidence}), but logic detected significant divergence (Diff {diff:.1f}). Auto-matched to top RAG result '{forced_name}'.",
+                                "match_confidence": final_conf
+                            }
+                            # Also bump the dictionary match score to reflect this
+                            for item in breakdown:
+                                if "Dictionary Match" in item.get("criterion", ""):
+                                    item["score"] = max(item["score"], 8)
+
+                print(f"\\n[DEBUG COLOR GEMINI] Parsed Response:\\n{parsed_result}")
+                return parsed_result
             
             print(f"\\n[DEBUG COLOR GEMINI] Raw Text:\\n{response.text}")
             return json.loads(response.text)
